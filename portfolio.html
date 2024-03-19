@@ -1,0 +1,161 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/3fd73ad1f0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+	<div class="container">
+		<nav>
+		<img src="logo.png" class="logo">
+			<ul id="sidemenu">
+				<li><a href="#header">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<i class="fas fa-times" onclick="closemenu()"></i>
+			</ul>
+			<i class="fas fa-bars" onclick="openmenu()"></i>
+		</nav>
+		<div class="header-text">
+		<h2>Hello , <br>This is <span>Bhavani Yelisetti.</span></h2>
+		<h3>Bachelor of Technology.</h3>
+		<h3>RGUKT-ONGOLE,IIIT,AP.</h3>
+		</div>
+	</div>
+</div>
+<div id="about">
+	<div class="contaniner">
+		<div class="row">
+			<div class="about-col-1">
+			<img src="mine1.jpeg">
+			</div>
+			<div class="about-col-2">
+				<h1 class="subtitle">About Me</h1><br/><br/>
+				<p>I am a B.Tech CSE student at Rajiv Gandhi University of Knowledge Technologies- Andhra Pradesh</p><br/>
+				<ul class="about-info mt-4 px-md-0 px-2">
+					<li class="d-flex"><b><span>Name:</span> </b><span>Yelisetti Bhavani</span></li>
+					<li class="d-flex"><b><span>Date Of Birth:</span> </b> <span>November 26, 2003</span></li>
+					<li class="d-flex"><b><span>Address:</span> </b> <span>Andhra Pradesh, India</span></li>
+					<li class="d-flex"><b><span>Pincode:</span> </b><span>533222</span></li>
+					<li class="d-flex"><b><span>Email:</span> </b><span>bhavaniy2003@gmal.com</span></li>
+					<li class="d-flex"><b><span>Mobile:</span> </b><span>+91 9515116836</span></li>
+				</ul><br/>
+				<p><button class="btn-1"><a href="/home/balu/Documents/WEB DEV/pro/BHAVANI_YELISETTI.pdf">Download CV</a></button></p>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<!--myskills-->
+<section id="skills">
+	<center><h1>My Skills</h1></center>
+	<div class="myskills">
+	<div class="progress-container">
+        <div class="progress-label">HTML &nbsp;80%</div>
+        <div class="progress-bar">
+            <div class="progress-bar-inner" style="width: 80%;"></div>
+		</div>
+        <div class="progress-label">CSS &nbsp; 60%</div>
+        <div class="progress-bar">
+            <div class="progress-bar-inner" style="width: 60%;"></div>
+        </div>
+        <div class="progress-label">JavaScript &nbsp; 50%</div>
+        <div class="progress-bar">
+            <div class="progress-bar-inner" style="width: 50%;"></div>
+        </div>
+        <div class="progress-label">Python &nbsp; 90%</div>
+        <div class="progress-bar">
+            <div class="progress-bar-inner" style="width: 90%;"></div>
+        </div>
+		<div class="progress-label">C &nbsp; 70%</div>
+        <div class="progress-bar">
+            <div class="progress-bar-inner" style="width: 90%;"></div>
+        </div>
+    </div>
+	</div>
+</section>
+
+
+
+<!--projects-->
+<section class="proj" id="projects" data-aos="fade-up">
+	<h2>Projects</h2>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="project mb-4" data-aos="fade-up">
+			   <h3>Project 1: E-commerce Website</h3>
+				<p>I have made an Amazing E Commerce Website using Frontend Technologies & frameworks.This project deals with exploring the products and adding to cart for easy access.</p>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="project mb-4" data-aos="fade-up">
+				<h3>Project 2: News App Using API</h3>
+				<p>I have made a site, were we can get news updates with the help of api,I have made use of axios to send the requests and rendered data on screen using Reactjs.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!----contact-->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+					<h1 class="subtitle">Contact Me</h1>
+					<p><i class="fa-regular fa-paper-plane"></i>bhavaniy2003@gmail.com</p>
+					<p><i class="fa-solid fa-phone-flip"></i>9515116836</p>
+					<div class="social-icons">
+						<a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+						<a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+						<a href="#"><i class="fa-brands fa-telegram"></i></a>
+					</div>
+			</div>
+			<div class="contact-right">
+				<form name="submit-to-google-sheet">
+							<input type="text" name="Name" placeholder="Your Name" required>
+							<input type="email" name="Email" placeholder="Your Email" required>
+							<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+							<button type="submit" class="btn btn2">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>Copyright @ Bhavani<i class="fa-regular fa-heart"></i></p>
+	</div>
+</div>
+
+<script>
+	var tablinks=document.getElementsByClassName("tab-links");
+	var tabcontents=document.getElementsByClassName("tab-contents");
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link")
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab")
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+</script>
+<script>
+	var sidemenu=document.getElementById("sidemenu");
+	function openmenu(){
+		sidemenu.style.right="3px";
+	}
+	function closemenu(){
+		sidemenu.style.right="-200px";
+	}
+</script>
+<script src="main.js"></script>
+</body>
+</html>
